@@ -36,6 +36,8 @@ $ tns run ios
 ```
 - vue-router는 동작하는 것을 확인했으나, Progess Nativescript는 사용시 오류가 발생함(http://docs.telerik.com/devtools/nativescript-ui/introduction)
 
+3. Progress Nativescript ui Component 추가
+- npm install -save nativescript-ui-sidedrawer(http://docs.telerik.com/devtools/nativescript-ui/Controls/Vue/SideDrawer/getting-started)
 
 
 ## Usage
