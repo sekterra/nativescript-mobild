@@ -38,7 +38,11 @@ $ tns run ios
 
 3. Progress Nativescript ui Component 추가
 - npm install -save nativescript-ui-sidedrawer(http://docs.telerik.com/devtools/nativescript-ui/Controls/Vue/SideDrawer/getting-started)
-
+- main.js에 다음 소스 코드 추가
+``` bash
+// sideDrawer 컴포넌트  전역에서 사용할 수 있도록 등록
+Vue.registerElement('RadSideDrawer', () => require('nativescript-ui-sidedrawer').RadSideDrawer)
+```
 
 ## Usage
 
