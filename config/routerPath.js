@@ -3,6 +3,7 @@
  */
 import Home from '../src/components/Home';
 import HelloWorld from '../src/components/HelloWorld';
+import SideDrawer from '../src/samples/SideDrawer'; // side drawer 샘플 페이지
 
 export default [
   {
@@ -17,6 +18,13 @@ export default [
     component: HelloWorld,
     meta: {
       title: 'Hello World',
+    },
+  },
+  {
+    path: '/samples/sideDrawer',
+    component: SideDrawer,
+    meta: {
+      title: 'SideDrawer',
     },
   },
   {path: '*', redirect: '/home'},
