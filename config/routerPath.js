@@ -4,6 +4,7 @@
 import Home from '../src/components/Home';
 import HelloWorld from '../src/components/HelloWorld';
 import SideDrawer from '../src/samples/SideDrawer'; // side drawer 샘플 페이지
+import CommonControls from '../src/samples/CommonControls';
 
 export default [
   {
@@ -25,6 +26,13 @@ export default [
     component: SideDrawer,
     meta: {
       title: 'SideDrawer',
+    },
+  },
+  {
+    path: '/samples/commonControls',
+    component: CommonControls,
+    meta: {
+      title: 'CommonControls',
     },
   },
   {path: '*', redirect: '/home'},

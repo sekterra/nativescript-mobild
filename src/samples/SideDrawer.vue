@@ -49,10 +49,10 @@ export default {
 </script>
 
 <style>
-/* button {
+button {
   font-size: 15;
   horizontal-align: center;
-} */
+}
 
 .drawerContentText {
   font-size: 13;
