@@ -1,5 +1,8 @@
 #본 파일을 npm 패키지를 설치 또는 삭제할 때 이력을 남기는 페이지임
 
-- nativescript-ui-autocomplete : 삭제
- *이유 : 컴포넌트 자체가 vue.js 용이 아닌 것으로 판단됨, ObservableArray 데이터 형 때문에 문제가 생김
+- nativescript-ui-autocomplete
+  목적 : auto complete를 구현하기 위한 npm 모듈
+  명령어 : npm install -save nativescript-ui-autocomplete
+
+
 

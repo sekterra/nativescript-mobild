@@ -5,10 +5,13 @@
 <Page>
   <ActionBar title="Float-Up Labels" class="action-bar"></ActionBar>
   <ScrollView>
-    <StackLayout class="m-20">
-      <Label class="m-b-20" text="Give focus to one of the text fields below and watch the labels float up." textWrap="true" />
-      <FloatLabel placeholder="Username" />
-      <FloatLabel placeholder="Password" secure="true" />
+    <StackLayout>
+      <AutoComplete :title="나라선택" :dataList="countryDataList"></AutoComplete>
+      <StackLayout class="m-20">
+        <Label class="m-b-20" text="Give focus to one of the text fields below and watch the labels float up." textWrap="true" />
+        <FloatLabel placeholder="Username" />
+        <FloatLabel placeholder="Password" secure="true" />
+      </StackLayout>
     </StackLayout>
   </ScrollView>
 </Page>
@@ -16,12 +19,21 @@
 
 <script>
 import FloatLabel from '../components/FloatLabel'
+import AutoComplete from '../components/AutoComplete'
+
+const countries = ["Albania", "Andorra", "Australia", "Belgium", "Bulgaria", "Cyprus", "Denmark", "Finland", "France", "Germany", "Greece", "Hungary", "Ireland", "Italy", "Japan", "Latvia", "Luxembourg", "Macedonia", "Moldova", "Monaco", "Netherlands", "Norway", "Poland", "Romania", "Russia", "Slovakia", "Slovenia", "Sweden", "Turkey", "Ukraine", "USA"];
 export default {
   components: {
-    'FloatLabel': FloatLabel
+    'FloatLabel': FloatLabel,
+    'AutoComplete': AutoComplete
   },
   created() {
     console.log('common control created2')
   },
+  data() {
+    return {
+      countryDataList: countries
+    }
+  }
 }
 </script>
