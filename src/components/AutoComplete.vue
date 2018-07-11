@@ -12,7 +12,7 @@
           <StackLayout v-suggestionItemTemplate orientation="vertical">
             <v-template scope="item">
               <GridLayout columns="auto, *">
-                <Image height="40" col="0" :src="item.text | imageName" />
+                <Image height="40" col="0" :src="item.text | imageName" />{{item.text | imageName}}
                 <Label col="1" :text="item.text" class="p-l-5" />
               </GridLayout>
             </v-template>
@@ -60,6 +60,9 @@ export default {
   },
   filters: {
     imageName(_value) {
+      console.log("_value:" + _value);
+      if (_value) console.log("~/images/" + _value.toLowerCase() + ".png");
+      // console.log("~/images/" + _value.toLowerCase() + ".png");
       return _value ? "~/images/" + _value.toLowerCase() + ".png" : "";
     }
   }
